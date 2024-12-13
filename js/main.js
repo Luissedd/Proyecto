@@ -2,6 +2,8 @@
 let productosHTML = '';
 let botonTodos = document.querySelector("#todos");
 let id = "";
+let titulo = document.getElementById("titulo-principal");
+ShowAllProducts();
 botonTodos.addEventListener('click', () => {
     ShowAllProducts();
 })
@@ -37,6 +39,7 @@ function ShowProducts (id){
                         </div>
             `
             }
+            titulo.innerText = id;
             document.querySelector('.contenedor-productos').innerHTML = productosHTML;
         })
         productosHTML = '';
@@ -58,6 +61,7 @@ function ShowAllProducts(){
                     </div>
         `
     })
+    titulo.innerText = "Todos los productos";
     document.querySelector('.contenedor-productos').innerHTML = productosHTML;
     productosHTML = '';
 }
