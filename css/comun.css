@@ -39,3 +39,6 @@ a {
     color: var(--clr-main-light);
     font-size: .85rem;
 }
+a:visited{
+    color: none;
+}

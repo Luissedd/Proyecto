@@ -38,6 +38,14 @@ aside{
     display: block;
     text-align: center;
     line-height: 3rem;
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+}
+.numerito{
+    color: var(--clr-white);
+    background-color: var(--clr-main);
+    padding: 0.1rem;
+    border-radius: 0.1rem;
 }
 .menu{
     height: 70vh;      
@@ -131,4 +139,16 @@ footer{
     position: absolute;
     bottom: 0;
     margin: 1rem;
+}
+.titulo-principal{
+    color: var(--clr-main);
+}
+.logo a{
+    color: var(--clr-white);
+}
+.logo a:visited h2{
+    color: var(--clr-white);
+}
+.logo a:active{
+    color: var(--clr-main);
 }
