@@ -34,7 +34,7 @@ function ShowProducts (id){
                             <div class="producto-detalles">
                                 <h3 class="producto-titulo">${producto.titulo} 01</h3>
                                 <p class="producto-precio">$${producto.precio}</p>
-                                <button class="producto-agregar">Agregar</button>
+                                <button class="producto-agregar" id="agregar">Agregar</button>
                             </div>
                         </div>
             `
@@ -56,7 +56,7 @@ function ShowAllProducts(){
                         <div class="producto-detalles">
                             <h3 class="producto-titulo">${producto.titulo} 01</h3>
                             <p class="producto-precio">$${producto.precio}</p>
-                            <button class="producto-agregar">Agregar</button>
+                            <button class="producto-agregar" id="agregar">Agregar</button>
                         </div>
                     </div>
         `
@@ -82,8 +82,3 @@ closeMenuBtn.addEventListener('click', () => {
   sidebar.classList.remove('active');
 });
 
-const login = document.getElementsByClassName('logo');
-
-login.addEventListener('click',() =>{
-    window.location.href = "index.html";
-})
