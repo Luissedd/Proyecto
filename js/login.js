@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return true;
     };
   
-    // Validar el campo "password"
+
     const validarPassword = () => {
       const passwordValor = password.value.trim();
       const regexPassword = /^[a-zA-Z0-9·$%&/()]{8,16}$/;
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return true;
     };
   
-    // Limpiar datos
+
     limpiarButton.addEventListener("click", () => {
       nombre.value = "";
       password.value = "";
@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
       errorPassword.textContent = "";
     });
   
-    // Validar el formulario antes de enviar
+
     formulario.addEventListener("submit", (e) => {
-      e.preventDefault(); // Evita el envío del formulario si hay errores
+      e.preventDefault(); 
   
       const nombreValido = validarNombre();
       const passwordValido = validarPassword();
